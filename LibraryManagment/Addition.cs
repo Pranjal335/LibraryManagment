@@ -7,9 +7,17 @@ namespace LibraryManagment
 {
     internal class Addition:IEnumerable
     {
+        public static List<Book> books = new List<Book>
+        {
+            new Book{ID=1,Name="alpha" },
+            new Book{ID=2,Name="alpha" },
+            new Book{ID=3,Name="alpha" },
+            new Book{ID=4,Name="alpha" },
+            new Book{ID=5,Name="alpha" }
+    
 
-
-        private List<Book> books;
+        };
+        
 
         
         public void ADD(Book NewBook)
@@ -20,11 +28,18 @@ namespace LibraryManagment
               
             }
             books.Add(NewBook);
+            
         }
 
-
-
-
+        public void Rem(int i)
+        {
+            if (books != null)
+            {
+                books.RemoveAll(r => r.ID == i);
+                
+            }
+            
+        }
 
 
         public IEnumerator GetEnumerator()
@@ -44,7 +59,7 @@ namespace LibraryManagment
 
    
 
-    internal class Book
+    public class Book
     {
         public int ID { get; set; }
         public string Name { get; set; }

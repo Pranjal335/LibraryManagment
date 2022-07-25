@@ -7,7 +7,7 @@ namespace LibraryManagment
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Select you identity: ");
+            Console.WriteLine(" Select your identity: ");
             Console.WriteLine(" Press 1 For 'Librarian' ");
             Console.WriteLine(" Press 2 For 'Student' ");
             string chosen= Console.ReadLine();

@@ -19,14 +19,15 @@ namespace LibraryManagment
             int y= int.Parse(LibrarianChoice);
 
             Books b = new Books();
+            Newspaper p = new Newspaper();
 
             if (y == 1)
             {
                 b.B();
             }
-            else 
+            else if(y == 2)
             {
-                l.a();
+                p.news();
 
             }
 

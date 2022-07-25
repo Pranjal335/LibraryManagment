@@ -29,7 +29,7 @@ namespace LibraryManagment
                     Console.WriteLine("Please Enter Book Name: ");
                     string b = Console.ReadLine();
                    
-                    t.ADD(new Book() { ID = a, Name = b });
+                    t.ADD(new Book{ ID = a, Name = b });
                 }
                     
 
@@ -38,6 +38,32 @@ namespace LibraryManagment
                     Console.WriteLine($"Book ID-{x.ID}  Book Name-{x.Name}");
                 }
                 Console.ReadLine();
+
+                B();
+
+            }
+            else if(z == 2)
+            {
+                Console.WriteLine("Type Book code to Remove: ");
+                int i = Convert.ToInt32(Console.ReadLine());
+                t.Rem(i);
+
+                foreach (Book x in t)
+                {
+                    Console.WriteLine($"Book ID-{x.ID}  Book Name-{x.Name}");
+                }
+                B();
+
+
+
+
+            }
+            else
+            {
+                foreach (Book x in t)
+                {
+                    Console.WriteLine($"Book ID-{x.ID}  Book Name-{x.Name}");
+                }
 
             }
         }
