@@ -4,14 +4,15 @@ using System.Text;
 
 namespace LibraryManagment
 {
-    internal class Librarian
+    internal class Librarian:Program
     {
         public void a()
         {
-            Console.WriteLine("Welcome Sir");
             Console.WriteLine();
-            Console.WriteLine("What do you want to manage today?");
-            Console.WriteLine("[1] for Books, [2] for Newspaper ");
+            Console.WriteLine("-------------Welcome Sir----------------");
+            Console.WriteLine();
+            Console.WriteLine("------What do you want to manage today?------");
+            Console.WriteLine("[1] for Books, [2] for Newspaper, [3] to end this session ");
 
             Librarian l = new Librarian();
 
@@ -30,6 +31,7 @@ namespace LibraryManagment
                 p.news();
 
             }
+            
 
 
         }

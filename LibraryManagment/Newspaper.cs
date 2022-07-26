@@ -4,13 +4,16 @@ using System.Text;
 
 namespace LibraryManagment
 {
-    internal class Newspaper
+    internal class Newspaper:Librarian
     {
         
 
         public void news()
         {
+            Console.WriteLine();
             Console.WriteLine("[1] Viewing all the available newspaper");
+            Console.WriteLine("[2] Back");
+            Console.WriteLine();
 
             int x  = Convert.ToInt32(Console.ReadLine());
 
@@ -22,7 +25,13 @@ namespace LibraryManagment
                 {
                     Console.WriteLine($"Title- {y.Title}");
                 }
-                Console.ReadLine();
+                Console.WriteLine();
+                news();
+            }
+            else if (x == 2)
+            {
+                a();
+
             }
 
         }

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace LibraryManagment
 {
-    internal class Addition:IEnumerable
+    internal class Addition
     {
         public static List<Book> books = new List<Book>
         {
@@ -17,9 +17,7 @@ namespace LibraryManagment
     
 
         };
-        
 
-        
         public void ADD(Book NewBook)
         {
             if (books == null)
@@ -61,6 +59,8 @@ namespace LibraryManagment
 
     public class Book
     {
+        public Boolean IsBorrowed
+        { get; set; }
         public int ID { get; set; }
         public string Name { get; set; }
     }
