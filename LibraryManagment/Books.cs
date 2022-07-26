@@ -29,8 +29,6 @@ namespace LibraryManagment
                     Console.WriteLine("Please Enter Book ID: ");
                     int a = Convert.ToInt32(Console.ReadLine());
 
-
-                   
                     Console.WriteLine("Please Enter Book Name: ");
                     string b = Console.ReadLine();
                     Console.WriteLine();
@@ -73,7 +71,7 @@ namespace LibraryManagment
             }
             else
             {
-                Console.WriteLine("[1] for Books, [2] for Newspaper ");
+                Console.WriteLine("[1] for Books, [2] for Newspaper, [3] to end this session ");
                 int y = Convert.ToInt32(Console.ReadLine());
                 if (y == 1)
                 {
@@ -82,6 +80,15 @@ namespace LibraryManagment
                 else if (y == 2)
                 {
                     news();
+                }
+                else if(y == 3)
+                {
+
+                }
+                else
+                {
+                    Console.WriteLine("Invalid Input");
+
                 }
             }
         }

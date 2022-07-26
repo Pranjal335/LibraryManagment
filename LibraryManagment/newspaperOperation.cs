@@ -14,6 +14,18 @@ namespace LibraryManagment
             new Paper{Title="Hindustan Times" },
         };
 
+
+        public void add(Paper newpaper)
+        {
+            if (Newspapers == null)
+            {
+                Newspapers = new List<Paper>();
+
+            }
+            Newspapers.Add(newpaper);
+
+        }
+
         public IEnumerator GetEnumerator()
         {
             if (Newspapers != null)

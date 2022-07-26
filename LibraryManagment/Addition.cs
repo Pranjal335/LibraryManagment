@@ -5,17 +5,20 @@ using System.Text;
 
 namespace LibraryManagment
 {
-    internal class Addition
+    internal class Addition:IEnumerable
     {
         public static List<Book> books = new List<Book>
         {
-            new Book{ID=1,Name="alpha" },
-            new Book{ID=2,Name="alpha" },
-            new Book{ID=3,Name="alpha" },
-            new Book{ID=4,Name="alpha" },
-            new Book{ID=5,Name="alpha" }
-    
-
+            new Book{ID=1,Name="Book1" },
+            new Book{ID=2,Name="Book2" },
+            new Book{ID=3,Name="Book3" },
+            new Book{ID=4,Name="Book4" },
+            new Book{ID=5,Name="Book5" },
+            new Book{ID=6,Name="Book6" },
+            new Book{ID=7,Name="Book7" },
+            new Book{ID=8,Name="Book8" },
+            new Book{ID=9,Name="Book9" },
+            new Book{ID=10,Name="Book10" }
         };
 
         public void ADD(Book NewBook)

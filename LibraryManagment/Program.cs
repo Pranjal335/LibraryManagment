@@ -24,7 +24,7 @@ namespace LibraryManagment
                     l.a();
                     break;
                 case 2:
-                    s.stu();
+                    s.studentPortal();
                     break;
 
             }

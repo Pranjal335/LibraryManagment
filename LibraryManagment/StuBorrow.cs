@@ -4,12 +4,12 @@ using System.Text;
 
 namespace LibraryManagment
 {
-    internal class StuBorrow
+    internal class StuBorrow:Students
     {
         public static void BorrowBook()
         {
             Addition t = new Addition();
-            Console.WriteLine("Enter Book Code ");
+            Console.Write("Enter Book Code ");
             int borrow = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine();
             foreach (Book b in t)
@@ -19,6 +19,7 @@ namespace LibraryManagment
                     if (b.IsBorrowed == true)
                     {
                         Console.WriteLine("------------Book is already taken-------------");
+                        
                         Console.WriteLine();
                     }
                     else
@@ -50,7 +51,7 @@ namespace LibraryManagment
                        
                         Console.WriteLine("------------Book is succesfully returned---------------");
                         Console.WriteLine();
-                        break;
+                       
                     }
                     else
                     {

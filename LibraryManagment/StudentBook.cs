@@ -24,7 +24,7 @@ namespace LibraryManagment
                 }
                 else if (val == 2)
                 {
-                stu();
+                studentPortal();
                 }
 
                 else
@@ -48,7 +48,7 @@ namespace LibraryManagment
             }
             else if (value == 2)
             {
-                stu();
+                studentPortal();
             }
             else
             {
