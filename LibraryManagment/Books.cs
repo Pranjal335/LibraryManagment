@@ -9,10 +9,12 @@ namespace LibraryManagment
         public void B()
         {
             Console.WriteLine();
-            Console.WriteLine("[1] for Adding ");
-            Console.WriteLine("[2] for Removing ");
-            Console.WriteLine("[3] for Viewing all the available books");
-            Console.WriteLine("[4] for Back");
+            Console.WriteLine("    ----------------------------------------------");
+            Console.WriteLine("   |    [1] for Adding                            |");
+            Console.WriteLine("   |    [2] for Removing                          |");
+            Console.WriteLine("   |    [3] for Viewing all the available books   |");
+            Console.WriteLine("   |    [4] for Back                              |");
+            Console.WriteLine("    ----------------------------------------------");
             Console.WriteLine();
 
             Addition t = new Addition();
@@ -22,14 +24,14 @@ namespace LibraryManagment
 
             if (z == 1)
             {
-                Console.WriteLine("How Many Books You Want to Add Now");
+                Console.Write("   *-  How Many Books You Want to Add Now: ");
                 int quantity=Convert.ToInt32(Console.ReadLine());
 
                 for (int i = 0; i < quantity; i++) {
-                    Console.WriteLine("Please Enter Book ID: ");
+                    Console.Write("   *-  Please Enter Book ID: ");
                     int a = Convert.ToInt32(Console.ReadLine());
-
-                    Console.WriteLine("Please Enter Book Name: ");
+                    Console.WriteLine();
+                    Console.Write("   *-  Please Enter Book Name: ");
                     string b = Console.ReadLine();
                     Console.WriteLine();
                     Console.WriteLine();
@@ -40,7 +42,7 @@ namespace LibraryManagment
 
                 foreach(Book x in t)
                 {
-                    Console.WriteLine($"Book ID-{x.ID}  Book Name-{x.Name}");
+                    Console.WriteLine($"   *-  Book ID-{x.ID}  Book Name-{x.Name}");
                 }
                 Console.WriteLine();
 
@@ -49,13 +51,13 @@ namespace LibraryManagment
             }
             else if(z == 2)
             {
-                Console.WriteLine("Type Book code to Remove: ");
+                Console.Write("   *-  Type Book code to Remove: ");
                 int i = Convert.ToInt32(Console.ReadLine());
                 t.Rem(i);
 
                 foreach (Book x in t)
                 {
-                    Console.WriteLine($"Book ID-{x.ID}  Book Name-{x.Name}");
+                    Console.WriteLine($"   *-  Book ID-{x.ID}  Book Name-{x.Name}");
                 }
                 Console.WriteLine();
                 B();
@@ -64,14 +66,18 @@ namespace LibraryManagment
             {
                 foreach (Book x in t)
                 {
-                    Console.WriteLine($"Book ID-{x.ID}  Book Name-{x.Name}");
+                    Console.WriteLine($"   *-  Book ID-{x.ID}  Book Name-{x.Name}");
                 }
                 Console.WriteLine();
                 B();
             }
             else
             {
-                Console.WriteLine("[1] for Books, [2] for Newspaper, [3] to end this session ");
+                Console.WriteLine("   |------------------------------------|");
+                Console.WriteLine("   |   Press [1] for Books              |");
+                Console.WriteLine("   |   Press [2] for Newspaper          |");
+                Console.WriteLine("   |   Press [3] to end this session    |");
+                Console.WriteLine("   |------------------------------------|");
                 int y = Convert.ToInt32(Console.ReadLine());
                 if (y == 1)
                 {
@@ -87,7 +93,7 @@ namespace LibraryManagment
                 }
                 else
                 {
-                    Console.WriteLine("Invalid Input");
+                    Console.WriteLine("   *-  Invalid Input");
 
                 }
             }

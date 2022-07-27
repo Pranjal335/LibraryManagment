@@ -12,7 +12,13 @@ namespace LibraryManagment
             Console.WriteLine("-------------Welcome Sir----------------");
             Console.WriteLine();
             Console.WriteLine("------What do you want to manage today?------");
-            Console.WriteLine("[1] for Books, [2] for Newspaper, [3] to end this session ");
+            Console.WriteLine();
+            
+            Console.WriteLine("   |------------------------------------|");
+            Console.WriteLine("   |   Press [1] for Books              |");
+            Console.WriteLine("   |   Press [2] for Newspaper          |");
+            Console.WriteLine("   |   Press [3] to end this session    |");
+            Console.WriteLine("   |------------------------------------|");
 
             Librarian l = new Librarian();
 
@@ -31,9 +37,6 @@ namespace LibraryManagment
                 p.news();
 
             }
-            
-
-
         }
     }
 }

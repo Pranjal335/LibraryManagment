@@ -10,10 +10,12 @@ namespace LibraryManagment
         
         public void BorrowOperation()
         {
-            
-            
-            Console.WriteLine("Press 1 to Borrow");
-            Console.WriteLine("Press 2 to Exit");
+
+            Console.WriteLine();
+            Console.WriteLine("    ----------------------- ");
+            Console.WriteLine("   |   Press 1 to Borrow   |");
+            Console.WriteLine("   |   Press 2 to Exit     |");
+            Console.WriteLine("    ----------------------- ");
             Console.WriteLine();
 
             int val = int.Parse(Console.ReadLine());
@@ -36,8 +38,11 @@ namespace LibraryManagment
 
         public void ReturnOperation()
         {
-            Console.WriteLine("Press 1 to Return");
-            Console.WriteLine("Press 2 to Exit");
+            Console.WriteLine();
+            Console.WriteLine("    ----------------------- ");
+            Console.WriteLine("   |   Press 1 to Return   |");
+            Console.WriteLine("   |   Press 2 to Exit     |");
+            Console.WriteLine("    ----------------------- ");
             Console.WriteLine();
 
             int value = int.Parse(Console.ReadLine());
@@ -52,7 +57,7 @@ namespace LibraryManagment
             }
             else
             {
-                Console.WriteLine("Invalid option");
+                Console.WriteLine("   *-  Invalid option");
             }
         }
     }

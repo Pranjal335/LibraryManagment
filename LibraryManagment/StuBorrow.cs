@@ -9,7 +9,7 @@ namespace LibraryManagment
         public static void BorrowBook()
         {
             Addition t = new Addition();
-            Console.Write("Enter Book Code ");
+            Console.Write("   *-  Enter Book Code: ");
             int borrow = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine();
             foreach (Book b in t)
@@ -19,26 +19,28 @@ namespace LibraryManagment
                     if (b.IsBorrowed == true)
                     {
                         Console.WriteLine("------------Book is already taken-------------");
-                        
+
                         Console.WriteLine();
                     }
                     else
                     {
                         Console.WriteLine(b.ID + ":" + b.Name);
                         Console.WriteLine("------------Book Successfully Issued------------");
+
                         b.IsBorrowed = true;
                         Console.WriteLine();
 
                     }
                 }
-
+                
+                
             }
             
         }
         public static void ReturnBook()
         {
             Addition t = new Addition();
-            Console.Write("Enter Book Code To Return");
+            Console.Write("   *-  Enter Book Code To Return:  ");
             int returning = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine();
             foreach (Book b in t)
@@ -49,7 +51,7 @@ namespace LibraryManagment
                     {
                         b.IsBorrowed = false;
                        
-                        Console.WriteLine("------------Book is succesfully returned---------------");
+                        Console.WriteLine($"----Book ID-{b.ID} BookName-{b.Name}------- succesfully returned---------------");
                         Console.WriteLine();
                        
                     }
@@ -60,6 +62,7 @@ namespace LibraryManagment
 
                     }
                 }
+                
 
             }
         }

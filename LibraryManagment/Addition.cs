@@ -9,16 +9,16 @@ namespace LibraryManagment
     {
         public static List<Book> books = new List<Book>
         {
-            new Book{ID=1,Name="Book1" },
-            new Book{ID=2,Name="Book2" },
-            new Book{ID=3,Name="Book3" },
-            new Book{ID=4,Name="Book4" },
-            new Book{ID=5,Name="Book5" },
-            new Book{ID=6,Name="Book6" },
-            new Book{ID=7,Name="Book7" },
-            new Book{ID=8,Name="Book8" },
-            new Book{ID=9,Name="Book9" },
-            new Book{ID=10,Name="Book10" }
+            new Book{ID=1,Name="In Search of Lost Time"},
+            new Book{ID=2,Name="War and Peace"},
+            new Book{ID=3,Name="Lord of the Rings"},
+            new Book{ID=4,Name="The Hobbit" },
+            new Book{ID=5,Name="Gone with the Wind" },
+            new Book{ID=6,Name="Life of Pi" },
+            new Book{ID=7,Name="The Hunger Games" },
+            new Book{ID=8,Name="The Chronicles of NARNIA" },
+            new Book{ID=9,Name="Divergent" },
+            new Book{ID=10,Name="City of Glass"}
         };
 
         public void ADD(Book NewBook)
@@ -29,7 +29,6 @@ namespace LibraryManagment
               
             }
             books.Add(NewBook);
-            
         }
 
         public void Rem(int i)
@@ -42,7 +41,7 @@ namespace LibraryManagment
             
         }
 
-
+        
         public IEnumerator GetEnumerator()
         {
             if (books != null)
@@ -66,5 +65,7 @@ namespace LibraryManagment
         { get; set; }
         public int ID { get; set; }
         public string Name { get; set; }
+
+        public int copies { get; set; }
     }
 }

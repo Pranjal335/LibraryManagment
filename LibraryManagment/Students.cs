@@ -11,11 +11,13 @@ namespace LibraryManagment
         {
            
             Console.WriteLine();
-            Console.WriteLine("Hello You Have Just Entered In Student Portal");
-            Console.WriteLine("Press 1 to BorrowBook");
-            Console.WriteLine("Press 2 to ReturnBook");
-            Console.WriteLine("Press 3 to View Available Books");
-            Console.WriteLine("Press 4 to End The Session");
+            Console.WriteLine("------Hello You Have Just Entered In Student Portal-----");
+            Console.WriteLine("--------------------------------------------------------");
+            Console.WriteLine("|                Press 1 to BorrowBook                 |");
+            Console.WriteLine("|                Press 2 to ReturnBook                 |");
+            Console.WriteLine("|                Press 3 to View Available Books       |");
+            Console.WriteLine("|                Press 4 to End The Session            |");
+            Console.WriteLine("--------------------------------------------------------");
             Console.WriteLine();
             int x=Convert.ToInt32(Console.ReadLine());
 
@@ -37,7 +39,7 @@ namespace LibraryManagment
             {
                 foreach (Book b in t)
                 {
-                    Console.WriteLine($"Book ID-{b.ID}  Book Name-{b.Name}");
+                    Console.WriteLine($"   *-  Book ID-{b.ID}  Book Name-{b.Name}");
                 }
                 studentPortal();
 
