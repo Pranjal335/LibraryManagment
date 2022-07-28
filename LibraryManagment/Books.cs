@@ -6,7 +6,7 @@ namespace LibraryManagment
 {
     internal class Books:Newspaper
     {
-        public void B()
+        public void Booksportal()
         {
             Console.WriteLine();
             Console.WriteLine("    ----------------------------------------------");
@@ -46,7 +46,7 @@ namespace LibraryManagment
                 }
                 Console.WriteLine();
 
-                B();
+                Booksportal();
 
             }
             else if(z == 2)
@@ -60,7 +60,7 @@ namespace LibraryManagment
                     Console.WriteLine($"   *-  Book ID-{x.ID}  Book Name-{x.Name}");
                 }
                 Console.WriteLine();
-                B();
+                Booksportal();
             }
             else if(z==3)
             {
@@ -69,7 +69,7 @@ namespace LibraryManagment
                     Console.WriteLine($"   *-  Book ID-{x.ID}  Book Name-{x.Name}");
                 }
                 Console.WriteLine();
-                B();
+                Booksportal();
             }
             else
             {
@@ -81,7 +81,7 @@ namespace LibraryManagment
                 int y = Convert.ToInt32(Console.ReadLine());
                 if (y == 1)
                 {
-                    B();
+                    Booksportal();
                 }
                 else if (y == 2)
                 {

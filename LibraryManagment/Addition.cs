@@ -61,11 +61,11 @@ namespace LibraryManagment
 
     public class Book
     {
-        public Boolean IsBorrowed
+        public Boolean Borrowed
         { get; set; }
         public int ID { get; set; }
         public string Name { get; set; }
 
-        public int copies { get; set; }
+        
     }
 }

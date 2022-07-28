@@ -7,6 +7,7 @@ namespace LibraryManagment
 
         static void Main(string[] args)
         {
+
             Console.WriteLine();
             Console.WriteLine("   *** Select your identity: ***");
             Console.WriteLine("   |----------------------------|");
@@ -22,7 +23,7 @@ namespace LibraryManagment
             switch(x)
             {
                 case 1:
-                    l.a();
+                    l.LibrarianPortal();
                     break;
                 case 2:
                     s.studentPortal();

@@ -16,7 +16,7 @@ namespace LibraryManagment
             {
                 if (b.ID.Equals(borrow))
                 {
-                    if (b.IsBorrowed == true)
+                    if (b.Borrowed == true)
                     {
                         Console.WriteLine("------------Book is already taken-------------");
 
@@ -27,7 +27,7 @@ namespace LibraryManagment
                         Console.WriteLine(b.ID + ":" + b.Name);
                         Console.WriteLine("------------Book Successfully Issued------------");
 
-                        b.IsBorrowed = true;
+                        b.Borrowed = true;
                         Console.WriteLine();
 
                     }
@@ -47,9 +47,9 @@ namespace LibraryManagment
             {
                 if (b.ID.Equals(returning))
                 {
-                    if (b.IsBorrowed == true)
+                    if (b.Borrowed == true)
                     {
-                        b.IsBorrowed = false;
+                        b.Borrowed = false;
                        
                         Console.WriteLine($"----Book ID-{b.ID} BookName-{b.Name}------- succesfully returned---------------");
                         Console.WriteLine();

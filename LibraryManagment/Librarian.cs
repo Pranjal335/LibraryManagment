@@ -4,9 +4,9 @@ using System.Text;
 
 namespace LibraryManagment
 {
-    internal class Librarian:Program
+    internal class Librarian
     {
-        public void a()
+        public void LibrarianPortal()
         {
             Console.WriteLine();
             Console.WriteLine("-------------Welcome Sir----------------");
@@ -30,13 +30,14 @@ namespace LibraryManagment
 
             if (y == 1)
             {
-                b.B();
+                b.Booksportal();
             }
             else if(y == 2)
             {
                 p.news();
 
             }
+            
         }
     }
 }

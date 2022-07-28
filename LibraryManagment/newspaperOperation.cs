@@ -7,14 +7,13 @@ namespace LibraryManagment
 {
     internal class newspaperOperation:IEnumerable
     {
+
         public static List<Paper> Newspapers = new List<Paper>
         {
             new Paper{Title="Times Of India" },
             new Paper{Title="Economics Times"  },
             new Paper{Title="Hindustan Times" },
         };
-
-
         public void add(Paper newpaper)
         {
             if (Newspapers == null)
@@ -23,7 +22,6 @@ namespace LibraryManagment
 
             }
             Newspapers.Add(newpaper);
-
         }
 
         public IEnumerator GetEnumerator()
@@ -36,13 +34,8 @@ namespace LibraryManagment
             {
                 return null;
             }
-
         }
-
-
     }
-
-
     public class Paper
     {
         public string Title { get; set; }
